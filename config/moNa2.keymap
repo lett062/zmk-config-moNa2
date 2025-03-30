@@ -86,7 +86,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp A B>,
+                <&inc_dec_kp A C>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
