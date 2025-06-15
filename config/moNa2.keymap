@@ -1,3 +1,8 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
@@ -7,29 +12,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <6 7>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <7 8>;
-        };
-
-        single {
-            bindings = <&kp SQT>;
-            key-positions = <19 20>;
-        };
-
-        double {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <18 19>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
