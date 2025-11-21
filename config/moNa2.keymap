@@ -84,6 +84,16 @@
             tap-ms = <20>;
         };
 
+        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+    
+            /* 左回転で左スクロール、右回転で右スクロール */
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+        };
+
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
