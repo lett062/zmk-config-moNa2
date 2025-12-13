@@ -12,7 +12,9 @@
     quick-tap-ms = <0>;
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 6 250>; };
+&trackball {
+    input-processors = <&zip_temp_layer 6 250>;
+};
 
 / {
     combos {
