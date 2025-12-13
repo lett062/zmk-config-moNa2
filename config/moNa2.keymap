@@ -12,7 +12,7 @@
     quick-tap-ms = <0>;
 };
 #ifdef CONFIG_SHIELD_MONA2_R
-&trackball {
+&trackball { # 変更箇所
     input-processors = <&zip_temp_layer 6 250>;
 };
 #endif
