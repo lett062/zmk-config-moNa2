@@ -83,6 +83,11 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        /* ここを変更しました！
+           INPUT_TRANSFORM_XY_SWAP: 縦と横を入れ替える
+           INPUT_TRANSFORM_Y_INVERT: 上下を反転させる (これがないと上が下になる場合が多いです)
+        */
+
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_xy_scaler 1 2>,
                            <&zip_temp_layer 6 10000>;
