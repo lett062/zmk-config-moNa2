@@ -60,8 +60,6 @@
         // automouse-layer = <6>;
         // scroll-layers = <3>;
 
-        cpi = <600>;
-
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
 
