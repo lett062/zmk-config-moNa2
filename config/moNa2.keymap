@@ -11,11 +11,11 @@
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
-#ifdef CONFIG_SHIELD_MONA2_R
-&trackball { # 変更箇所
+
+&mkp_input_listener { # 変更箇所
     input-processors = <&zip_temp_layer 6 250>;
 };
-#endif
+
 
 / {
     combos {
